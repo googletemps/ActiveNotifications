@@ -23,6 +23,8 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 
+import com.example.android.common.logger.Log;
+
 public class ActiveNotificationActivity extends MainActivity {
 
     private ActiveNotificationFragment mFragment;
@@ -43,6 +45,7 @@ public class ActiveNotificationActivity extends MainActivity {
     @Override
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
+
         findFragment();
         mFragment.updateNumberOfNotifications();
     }
